@@ -134,16 +134,14 @@ h3 {
 
 
 .texte {
-
-    margin-top: 40px;
     margin-left: 30px;
+    height: auto;
 }
 
 .photo {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    
     text-align: center;
-    margin-left: 260px;
+    margin:auto;
     width: 450px;
     height: 300px;
     border: solid 5px;
@@ -213,11 +211,11 @@ h6 {
     display: none;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .navBar {
         width: 140px;
-        height: auto;
-        position: relative;
+        height: 100rem;
+        position: fixed;
         text-align: center;
         margin: 0;
     }
@@ -235,16 +233,13 @@ h6 {
         font-size: 15px;
     }
 
-    .presentation {
-        margin-left: 140px;
-    }
     .what_i_do {
         margin-left: 140px;
 
     }
     #cv {
         height: auto;
-        overflow:scroll;
+        overflow:normal;
     }
     .langages {
         display: grid;
@@ -254,4 +249,26 @@ h6 {
         width: auto;
         overflow-wrap: normal;
     }
-} */
+    ul {
+        text-align: center;
+    }
+    .photo {
+        display: none; 
+    }
+
+    .presentation {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .photo {
+        display: none;
+    }
+    .presentation p{
+        width: auto;
+    }
+}
